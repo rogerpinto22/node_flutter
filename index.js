@@ -24,5 +24,4 @@ app.use(express.json());
 app.use(require('./src/Routes/web'));
 
 //declaracion del puerto
-let port = 4000;
-app.listen(port, () => console.log('App corriendo en http://localhost:' + port) );
+app.listen(process.env.PORT || 8080, () => console.log('App corriendo'));
