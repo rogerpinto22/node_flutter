@@ -21,7 +21,7 @@ app.use(cors({
 app.use(express.json());
 
 //declaraciones de las rutas
-app.use(require('./src/routes/web'));
+app.use(require('./src/Routes/web'));
 
 //declaracion del puerto
 let port = 4000;
