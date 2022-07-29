@@ -4,6 +4,8 @@ const router = express.Router();
 const { login, register } = require('../app/controllers/Middlewares/AuthController');
 const { cursosCtr } = require('../app/controllers/Index');
 
+router.get('/', (req, res) => res.send('Bienvenido'));
+
 // <============= Registro de Auth =================>
 router.post('/login', login);
 router.post('/register', register);
